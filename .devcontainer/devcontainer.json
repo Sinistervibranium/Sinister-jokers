@@ -1,0 +1,19 @@
+'''python
+Import hashlib
+Import hmac
+Import binascii
+Import random
+Def generate_hash (password):
+Salt = b"somesalt"# replace with
+Actual salt value
+H =hashlib.sha256(password + salt)
+Return h.hexdigest()
+Def check_hash(username,password):
+Salt =b"somesalt"# replace with actual salt value
+H = hashlib.sha256((username+password).encode())
+If len(h.digest())==32 and h==
+Generate_hash(password):
+Return true
+Else:
+Return false
+```
